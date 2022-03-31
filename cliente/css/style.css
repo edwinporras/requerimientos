@@ -722,7 +722,7 @@ ol {
 }
 
 .hero__search__phone__text span {
-	font-size: 14px;
+	font-size: 10px;
 	color: #6f6f6f;
 }
 
@@ -2912,7 +2912,7 @@ ol {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.header__menu ul li {
-		margin-right: 45px;
+		margin-right: 16px; /* 45 px */
 	}
 	.hero__search__form {
 		width: 490px;
