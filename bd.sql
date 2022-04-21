@@ -50,3 +50,11 @@ CREATE TABLE `ventas` (
   `id_pago` varchar(255) DEFAULT NULL,
   FOREIGN KEY (`id_cliente`) `clientes` REFERENCES (`id_cliente`)
 )
+
+CREATE TABLE `user`(
+    `id` INT(11) PRIMARY KEY AUTO_INCREMENT,
+    `usuario` VARCHAR(100),
+    `clave` VARCHAR(100),
+    `conclave` VARCHAR(100),
+    `email` VARCHAR(100)
+);
