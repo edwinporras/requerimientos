@@ -833,6 +833,7 @@
     background-color: #7e26d7;
 }
 .cont_formulario_principal{
+    margin: 0 12%;
     padding: 5% 0px;
     background-image: url(../img/cerezos.jpeg);
     background-size: cover;

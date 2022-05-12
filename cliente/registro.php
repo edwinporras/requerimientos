@@ -54,12 +54,7 @@ $conn = mysqli_connect($serv, $user, $pass, $namedb);
       <!-- <div class="row"> -->
         <!-- <div class="col-sm-4"></div> -->
         <!-- <div class="col-sm-4"> -->
-          <label for=""><?php 
-          if ($conn) {
-            echo "Esta conectado!!!!";
-        }else {
-            echo "No esta conectado";
-        } ?></label>
+         
 
 
         <div class="cont_formulario_principal">
@@ -151,7 +146,7 @@ $conn = mysqli_connect($serv, $user, $pass, $namedb);
                   </div>
 
                 <button type="submit" class="btn btn-primary btn-block btn-flat" name="registro" id="registrarNuevo">Registrarse</button>
-                <span class     ="btn btn-primary btn_registrar" name="registro" id="registrarNuevo">Registrar</span>
+                <!-- <span class     ="btn btn-primary btn_registrar" name="registro" id="registrarNuevo">Registrar</span> -->
               </form>
             </div>
           </div>
