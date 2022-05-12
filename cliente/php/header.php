@@ -47,7 +47,7 @@
 
 <body>
 
-    <a href="https://api.whatsapp.com/send/?phone=5431253999&text=Quisiera%20conocer%20mas%20sobre%20los%20servicios%20que%20ofrecen&app_absent=0" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp-square"></i></a>
+    <a href="https://api.whatsapp.com/send/?phone=57312999999999&text=Me%20gustaria%20saber%20mas%20acerca%20de%20los%20productos%20y%20el%20bono%20de%20descuento" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp-square"></i></a>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -57,17 +57,17 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
+            <a href="#"><img src="https://www.floristeriadfranco.com/c/26-category_default/desayunos-sorpresa.jpg" alt=""></a>
         </div>
         <div class="humberger__menu__cart">
             <ul>
-                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <!-- <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li> -->
                 <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
             </ul>
-            <div class="header__cart__price">Login<span>Registrarse</span></div>
+            <div class="header__cart__price">Login<a href="./registro"><span>Registrarse</span></a></div>
         </div>
         <div class="humberger__menu__widget">
-            <div class="header__top__right__language">
+            <!-- <div class="header__top__right__language">
                 <img src="img/language.png" alt="">
                 <div>English</div>
                 <span class="arrow_carrot-down"></span>
@@ -75,7 +75,7 @@
                     <li><a href="#">Spanis</a></li>
                     <li><a href="#">English</a></li>
                 </ul>
-            </div>
+            </div> -->
             <div class="header__top__right__auth">
                 <a href="#"><i class="fa fa-user"></i> Login</a>
             </div>
@@ -84,7 +84,7 @@
             <ul>
                 <li class="active"><a href="./index.html">Regalos</a></li>
                 <li><a href="./contact.html">Adicionar</a></li>
-                <li><a href="./shop-grid.html">Medias tardes</a></li>
+                <!-- <li><a href="./shop-grid.html">Medias tardes</a></li> -->
                 <li><a href="./blog.html">Mugs</a></li>
                 <li><a href="./contact.html">Flores</a></li>
                 <li><a href="#">Desayunos sorpresa</a>
@@ -138,7 +138,7 @@
                                 <a href="#"><i class="fa fa-linkedin"></i></a>
                                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
                             </div>
-                            <div class="header__top__right__language">
+                            <!-- <div class="header__top__right__language">
                                 <img src="img/language.png" alt="">
                                 <div>English</div>
                                 <span class="arrow_carrot-down"></span>
@@ -146,7 +146,7 @@
                                     <li><a href="#">Spanis</a></li>
                                     <li><a href="#">English</a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <div class="header__top__right__auth">
                                 <a href="#"><i class="fa fa-user"></i> Login</a>
                             </div>
@@ -159,7 +159,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="https://www.floristeriadfranco.com/c/26-category_default/desayunos-sorpresa.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -167,7 +167,7 @@
                         <ul>
                             <li class="active"><a href="./index.html">Regalos</a></li>
                             <li><a href="./contact.html">Adicionar</a></li>
-                            <li><a href="./shop-grid.html">Medias tardes</a></li>
+                            <!-- <li><a href="./shop-grid.html">Medias tardes</a></li> -->
                             <li><a href="./blog.html">Mugs</a></li>
                             <li><a href="./contact.html">Flores</a></li>
                             <li><a href="#">Desayunos sorpresa</a>
@@ -190,10 +190,10 @@
                 <div class="col-lg-3">
                     <div class="header__cart">
                         <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <!-- <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li> -->
                             <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                         </ul>
-                        <div class="header__cart__price">Login <span>Registrarse</span></div>
+                        <div class="header__cart__price">Login <a href="./registro"><span>Registrarse</span></a></div>
                     </div>
                 </div>
             </div>

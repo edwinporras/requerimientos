@@ -5,12 +5,12 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            <a href="./index.html"><img src="https://www.floristeriadfranco.com/c/26-category_default/desayunos-sorpresa.jpg" alt=""></a>
                         </div>
                         <ul>
                             <li>Ciudad: cll 60-49 Bogot&aacute;</li>
                             <li>Telefono: +57 (601) 4655555</li>
-                            <li>Email: desayunosorepresas@gmail.com</li>
+                            <li>Email: desayunosorpresas@gmail.com</li>
                         </ul>
                     </div>
                 </div>

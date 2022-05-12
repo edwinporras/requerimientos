@@ -48,8 +48,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
-                        <div class="hero__text">
+                    <div class="hero__item set-bg" data-setbg="https://gogoartesanal.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-07-at-8.35.15-AM.jpeg">
+                        <div class="hero__text" style="background-color: #ffffff42;">
                             <span>Pregunta por nuestras diferentes variedades</span>
                             <h2>Desayunos Sorpresa <br />A domicilios a Bogot&aacute;</h2>
                             <p>Envio gratuito y pago contraentrega</p>
@@ -68,32 +68,32 @@
             <div class="row">
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
+                        <div class="categories__item set-bg" data-setbg="https://www.kprichitoregalos.com.co/wp-content/uploads/2019/07/49.png">
                             <h5><a href="#">Regalos</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
+                        <div class="categories__item set-bg" data-setbg="https://cdnx.jumpseller.com/toniytanacom/image/3086568/resize/540/540?1592845894">
                             <h5><a href="#">Adicionar</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
+                        <div class="categories__item set-bg" data-setbg="http://desayunosorpresa.enmedellincolombia.com/wp-content/uploads/2015/12/desayunos-sorpresa-medellin.jpg">
                             <h5><a href="#">Medias Tardes</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
+                        <div class="categories__item set-bg" data-setbg="https://tussorpresas.com/wp-content/uploads/2020/07/Mugs-Tus-Sorpresas.jpg">
                             <h5><a href="#">MUGS</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
+                        <div class="categories__item set-bg" data-setbg="https://www.floristeriadfranco.com/371-large_default/desayuno-sorpresa-cali-con-peluche-y-flores-.jpg">
                             <h5><a href="#">Flores</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
+                        <div class="categories__item set-bg" data-setbg="https://cuponassets.cuponatic-latam.com/backendCo/uploads/imagenes_descuentos/149500/7be64d79a38a07ac1bedab657484f2daeb283a8c.XL2.jpg">
                             <h5><a href="#">Desayunos sorpresa</a></h5>
                         </div>
                     </div>
@@ -249,7 +249,7 @@
     <!-- Featured Section End -->
 
     <!-- Banner Begin -->
-    <div class="banner mt-5">
+    <!-- <div class="banner mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
@@ -264,11 +264,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Banner End -->
 
     <!-- Latest Product Section Begin -->
-    <section class="latest-product spad">
+    <!-- <section class="latest-product spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
@@ -468,7 +468,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Latest Product Section End -->
 
     <!-- Blog Section Begin -->
