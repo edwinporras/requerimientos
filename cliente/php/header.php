@@ -47,7 +47,7 @@
 
 <body>
 
-    <a href="https://api.whatsapp.com/send/?phone=5431253999&text=Quisier%20conocer%20mas%20sobre%20los%20servicios%20que%20ofrecen&app_absent=0" class="whatsapp" target="_blank">WhatsApp</a>
+    <a href="https://api.whatsapp.com/send/?phone=5431253999&text=Quisiera%20conocer%20mas%20sobre%20los%20servicios%20que%20ofrecen&app_absent=0" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp-square"></i></a>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>

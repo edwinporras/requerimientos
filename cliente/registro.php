@@ -96,7 +96,7 @@ $conn = mysqli_connect($serv, $user, $pass, $namedb);
                   <div class="formulario__group" id="group_telefono">
                       <label for="telefono" class="formulario_label">Contraseña</label>
                       <div class="formulario_group-input">
-                          <input type="passsword" class="formulario__input" name="telefono" id="telefono" placeholder="Digite password">
+                          <input type="password" class="formulario__input" name="telefono" id="telefono" placeholder="Digite password">
                           <i class="formulario__validacion-estado fa fa-times-circle"></i>
                       </div>
                       <p class="formulario__input-error">
