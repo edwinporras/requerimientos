@@ -1,6 +1,24 @@
 <?php
 
+    function genera_codigo ($longitud) {
+        $caracteres = array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
+        $codigo = '';
 
+        for ($i = 1; $i <= $longitud; $i++) {
+            $codigo .= $caracteres[numero_aleatorio(0, 35)];
+        }
+
+        return $codigo;
+    }
+
+    function numero_aleatorio ($ninicial, $nfinal) {
+        $numero = rand($ninicial, $nfinal);
+
+        return $numero;
+    }
+
+    $ver = genera_codigo(6);
+    echo $ver;
     // FORMA PARA SABER SI ESTA CONECTADO A LA BASE DE DATOS
 
     
@@ -64,7 +82,9 @@
                 <div class='conatinerMain'>
                     <p class='textPlano'>Bienvenido " . $nombreok . " \r\n";
            
-            $msg .= " <br> Gracias por confiar en nosotros, este bono te proporcionara el 20% de descuento en la primera compra <br> codigo: 111225455 </p>
+            $msg .= " <br> Gracias por confiar en nosotros, este bono te proporcionara el 20% de descuento en la primera compra <br> codigo: ". $ver . " \r\n";
+            
+            $msg .= " </p>
                 </div>
             </body>
             </html>";
