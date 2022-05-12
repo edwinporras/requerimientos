@@ -9,7 +9,8 @@ $(document).ready(function () {
         servicios: /^.{4,50}$/, // 4 a 50 digitos.
         descripcion: /^.{1,1000}$/, // 1 a 1000 digitos.
         correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-        telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+        //telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+        telefono: /^.{7,50}$/ // 7 a 50 digitos.
     }
     
     const campos = {
