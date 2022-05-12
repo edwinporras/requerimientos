@@ -55,7 +55,7 @@ $conn = mysqli_connect($serv, $user, $pass, $namedb);
         <!-- <div class="col-sm-4"></div> -->
         <!-- <div class="col-sm-4"> -->
          
-
+      
 
         <div class="cont_formulario_principal">
            <div class="panel panel-danger">
