@@ -16,7 +16,7 @@
         // }
         $nombreok = $_REQUEST["nombre"]??'';
         $correook = $_REQUEST["correo"]??'';
-        $telenfok = $_REQUEST["telefono"]??'';
+        $telenfok = $_REQUEST["password"]??'';
         $descriok = $_REQUEST["descripcion"]??'';
         
 
@@ -41,15 +41,7 @@
     }
        
 ?>
-<?php 
-$serv="localhost";
-$user="admin";
-$pass="rux69jyf3pta";
-$namedb="proj_req";
-
-
-$conn = mysqli_connect($serv, $user, $pass, $namedb);
-?>
+  
     <!-- <div class="container"> -->
       <!-- <div class="row"> -->
         <!-- <div class="col-sm-4"></div> -->
@@ -57,12 +49,12 @@ $conn = mysqli_connect($serv, $user, $pass, $namedb);
          
       
 
-        <div class="cont_formulario_principal">
+        <div class="containerMainSuperior">
            <div class="panel panel-danger">
             <!-- <div class="panel panel-heading">
               REGISTRO DE USUARIO
             </div> -->
-            <div class="cont_formulario_cont">
+            <div class="containerMainInferior">
               <form action="" id="formulario">
                   <div class="formulario__group" id="group_nombre">
                       <label for="nombre" class="formulario_label">Nombre y Apellido</label>
@@ -87,11 +79,11 @@ $conn = mysqli_connect($serv, $user, $pass, $namedb);
                       </p>
                   </div>
 
-                  <!-- Campo Telefono -->
-                  <div class="formulario__group" id="group_telefono">
-                      <label for="telefono" class="formulario_label">Contraseña</label>
+                  <!-- Campo password -->
+                  <div class="formulario__group" id="group_password">
+                      <label for="password" class="formulario_label">Contraseña</label>
                       <div class="formulario_group-input">
-                          <input type="password" class="formulario__input" name="telefono" id="telefono" placeholder="Digite password">
+                          <input type="password" class="formulario__input" name="password" id="password" placeholder="Digite password">
                           <i class="formulario__validacion-estado fa fa-times-circle"></i>
                       </div>
                       <p class="formulario__input-error">
@@ -159,6 +151,7 @@ $conn = mysqli_connect($serv, $user, $pass, $namedb);
     <!-- </div> -->
 
 <?php 
-  mysqli_close($conn);
+  // mysqli_close($conn);
   include_once "php/footer.php";
 ?>
+<script src="js/validaciones.js"></script>

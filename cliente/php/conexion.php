@@ -38,7 +38,7 @@
 
         $nombreok = $_POST["nombre"];
         $correook = $_POST["correo"];
-        $telenfok = $_POST["telefono"];
+        $telenfok = $_POST["password"];
         $descriok = $_POST["descripcion"];
         
 

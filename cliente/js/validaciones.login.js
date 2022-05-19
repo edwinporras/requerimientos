@@ -71,27 +71,17 @@ $(document).ready(function () {
 
     $('#registrarNuevo').click(function(event){
         event.preventDefault();
-        if (($('#nombre').val()=="")&&($('#correo').val()=="")&&($('#password').val()=="")) {
+        if (($('#correo').val()=="")&&($('#password').val()=="")) {
             swal({
                 title: "Por favor complete los campos",
                 text: "Ningun campo debe estar vacio",
                 icon: "error",
                 button: "Ok",
               });
-        }else if ($('#nombre').val()=="") {
-              swal({
-                title: "Por favor complete los campos",
-                text: "Debes agregar el Nombre",
-                icon: "warning",
-                button: "Ok",
-              });
-            //alertify.alert("Debes agregar el nombre");
-            document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-            return false;
         }else if ($('#correo').val()=="") {
             swal({
                 title: "Por favor complete los campos",
-                text: "Debes agregar el Correo",
+                text: "Debes completar el Correo",
                 icon: "warning",
                 button: "Ok",
               });
@@ -101,7 +91,7 @@ $(document).ready(function () {
         }else if ($('#password').val()=="") {
             swal({
                 title: "Por favor complete los campos",
-                text: "Debes agregar la contraseña",
+                text: "Debes completar la contraseña",
                 icon: "warning",
                 button: "Ok",
               });
@@ -135,22 +125,22 @@ $(document).ready(function () {
         //     alertify.alert("Debes agregar el terminos");
         //     return false;
         // }  
-        cadena = "nombre=" + $('#nombre').val() +
-                "&correo=" + $('#correo').val() +
+        cadena = 
+                "correo=" + $('#correo').val() +
                 "&password=" + $('#password').val(); 
                 // +
                 // "&descripcion=" + $('#descripcion').val() +
                 // "&nombre_servicio=" + $('#nombre_servicio').val();
-        const terminos = document.getElementById('terminos');
-        if(campos.nombre && campos.correo && campos.password && terminos.checked ){
+        // const terminos = document.getElementById('terminos');
+        if(campos.correo && campos.password ){
         $.ajax({
             type:"POST",
-            url:"php/conexion.php",
+            url:"php/login.php",
             data:cadena,
             success:function (r) {
                 if (r) {
                     $('#formulario')[0].reset();
-                    alertify.success("Agregado con exito!!!");
+                    alertify.success("Ingreso con exito!!!");
                         document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
 
                        
@@ -159,20 +149,20 @@ $(document).ready(function () {
                             icono.classList.remove('formulario__group-correcto');
                         });
                 }else{
-                    alertify.error("Fallo al agregar!!!");
+                    alertify.error("Fallo al Ingresar!!!");
                     document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
                 }
             },
             error:function(rs){
                 if (rs) {
-                    alertify.error("Fallo al agregar 1");
+                    alertify.error("Fallo al ingresar 1");
                 }else{
-                    alertify.error("Fallo al agregar 2");
+                    alertify.error("Fallo al ingresar 2");
                 }
             }
         });
     }else{
-        alertify.warning("Tienes que aceptar los terminos y condiciones"); 
+        alertify.warning("Tienes que digitar todos los campos"); 
     }
     });
 });
