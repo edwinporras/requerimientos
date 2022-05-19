@@ -144,7 +144,7 @@
     color: black;
 }
 /* Formulario contact */
-.cont_formulario_cont{
+.containerMainInferior{
     width: 60%;
     margin: 0 auto;
     /* margin-bottom: 5%;
@@ -832,7 +832,7 @@
     height: 825px;
     background-color: #7e26d7;
 }
-.cont_formulario_principal{
+.containerMainSuperior{
     margin: 0 12%;
     padding: 5% 0px;
     background-image: url(../img/cerezos.jpeg);
@@ -1071,7 +1071,7 @@
     #registrarNuevo{
         width: 100%;
     }
-    .cont_formulario_cont{
+    .containerMainInferior{
         width: 100%;
         margin-top: 0;
         margin-bottom: 0;

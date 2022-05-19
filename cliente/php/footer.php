@@ -9,7 +9,7 @@
                         </div>
                         <ul>
                             <li>Ciudad: cll 60-49 Bogot&aacute;</li>
-                            <li>Telefono: +57 (601) 4655555</li>
+                            <li>password: +57 (601) 4655555</li>
                             <li>Email: desayunosorpresas@gmail.com</li>
                         </ul>
                     </div>
@@ -76,7 +76,6 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/validaciones.js"></script>
     <script src="js/alertifyjs/alertify.js"></script> 
     <script src="js/alertifyjs/alertify.min.js"></script> 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
