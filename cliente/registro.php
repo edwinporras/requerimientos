@@ -1,29 +1,30 @@
 <?php 
+  //Anidacion del header (MODULARIZACION DE CODIGO)
   include_once "php/header.php";
+    // Evento cuando se enviar el formulario y captura data
     if (isset($_REQUEST['registro'])){
-        $serv="localhost";
-        $user="admin";
-        $pass="rux69jyf3pta";
-        $namedb="proj_req";
-    
-    
-        $conn = mysqli_connect($serv, $user, $pass, $namedb);
-    
-        // if ($conn) {
-        //     echo "Esta conectado desde!!!!";
-        // }else {
-        //     echo "No esta conectado";
-        // }
+        // Conexion a la base de datos
+        include_once "php/config.php";
+
+        // Captura de algunos campos despues del request
         $nombreok = $_REQUEST["nombre"]??'';
         $correook = $_REQUEST["correo"]??'';
         $telenfok = $_REQUEST["password"]??'';
         $descriok = $_REQUEST["descripcion"]??'';
         
-
+        // Guardar registro
         $registro="INSERT INTO usuarios(email, pass, nombre ) 
         VALUES ('$correook', '$telenfok', '$nombreok')";
 
+        /**
+         * @param mysqli_query Metodo para guardar el registro
+         */
         $result= mysqli_query($conn, $registro);
+
+        /**
+         * Condicional si se ejecuta y se guarda que pase por true generando una alerta
+         * de lo contrario genere un error
+         *  */
         if ($result){
         ?>
           <div class="alert alert-success" role="alert">
@@ -41,19 +42,9 @@
     }
        
 ?>
-  
-    <!-- <div class="container"> -->
-      <!-- <div class="row"> -->
-        <!-- <div class="col-sm-4"></div> -->
-        <!-- <div class="col-sm-4"> -->
-         
-      
-
+        <!-- formulario de registro -->
         <div class="containerMainSuperior">
            <div class="panel panel-danger">
-            <!-- <div class="panel panel-heading">
-              REGISTRO DE USUARIO
-            </div> -->
             <div class="containerMainInferior">
               <form action="" id="formulario">
                   <div class="formulario__group" id="group_nombre">
@@ -91,38 +82,6 @@
                       </p>
                   </div>
 
-                  <!-- Campo Descripcion -->
-                  <!-- <div class="formulario__group" id="group_descripcion">
-                      <label for="descripcion" class="formulario_label">Descripcion (Opcional)</label>
-                      <div class="formulario_group-input">
-                          <textarea name="descripcion" id="descripcion" class="txt_area formulario__input"></textarea>
-                          <i class="txt_est_icon formulario__validacion-estado fa fa-times-circle"></i>
-                      </div>
-                      <p class="formulario__input-error">
-                          La descripcion debe tener un maximo de 1000 caracteres
-                      </p>
-                  </div> -->
-
-                  <!-- Nombre de servicio -->
-                  <!-- <div class="formulario__group" id="group_nombre_servicio">
-                    <label for="nombre_servicio" class="formulario_label">Tipo de servicio</label>
-                    <div class="formulario_group-input">
-                      <select class="formulario__input" id="nombre_servicio" name="nombre_servicio">
-                        <option value="" >Seleccione Alguno de los servicios</option>
-                        <option value="creacion paginas web" >Creacion de Paginas Web</option>
-                        <option value="tienda online" >Tiendas online / Ecommerce</option>
-                        <option value="app desktop" >Desarrollo de Aplicaciones de Escritorio</option>
-                        <option value="app movil" >Desarrollo de Aplicaciones Móviles</option>
-                        <option value="matenimiento/actualizacion" >Mantenimiento o Actualización de Contenido y/o Maquetación de tu sitio web</option>
-                        <option value="qa software" >Calidad de Software</option>
-                      </select>
-                      <i class="formulario__validacion-estado fa fa-times-circle"></i>
-                    </div>
-                    <p class="formulario__input-error">
-                        Seleccionar alguno de los campos
-                    </p>
-                  </div> -->
-
                   <!-- terminos y condiciones -->
                   <div class="formulario__group" id="grupo__terminos">
                       <label class="formulario__label">
@@ -138,20 +97,15 @@
                   </div>
 
                 <button type="submit" class="btn btn-primary btn-block btn-flat" name="registro" id="registrarNuevo">Registrarse</button>
-                <!-- <span class     ="btn btn-primary btn_registrar" name="registro" id="registrarNuevo">Registrar</span> -->
               </form>
             </div>
           </div>
         </div>
          
-        <!-- </div> -->
-        <!-- <div class="col-sm-4"></div>
-        <div class="col-sm-4"></div> -->
-      <!-- </div> -->
-    <!-- </div> -->
-
 <?php 
-  // mysqli_close($conn);
+  //Anidacion del footer (MODULARIZACION DE CODIGO)
   include_once "php/footer.php";
 ?>
+
+<!-- validaciones de campos del formulario registro -->
 <script src="js/validaciones.js"></script>

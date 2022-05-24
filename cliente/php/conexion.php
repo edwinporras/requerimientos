@@ -1,5 +1,10 @@
 <?php
-
+    /**
+     * @param genera_codigo captura en un arreglo los numeros de 0-9 con las letras del abecedario
+     * se inicializa y mediante un ciclo se generan dos valores instanciando el metodo @param numero_aleatorio
+     * dandoles valores aleatorios
+     * al final se le indica el largo de caracteres
+     */
     function genera_codigo ($longitud) {
         $caracteres = array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
         $codigo = '';
@@ -18,39 +23,30 @@
     }
 
     $ver = genera_codigo(6);
-    echo $ver;
-    // FORMA PARA SABER SI ESTA CONECTADO A LA BASE DE DATOS
 
-    
-    $serv="localhost";
-    $user="admin";
-    $pass="rux69jyf3pta";
-    $namedb="proj_req";
-
-
-    $conn = mysqli_connect($serv, $user, $pass, $namedb);
-
-    if ($conn) {
-        echo "Esta conectado!!!!";
-    }else {
-        echo "No esta conectado";
-    }
-
+        // Captura de algunos campos despues del request
         $nombreok = $_POST["nombre"];
         $correook = $_POST["correo"];
         $telenfok = $_POST["password"];
         $descriok = $_POST["descripcion"];
         
+        // Conexion a la base de datos
+        include_once "config.php";
 
-    
-
+        // Guardar registro
         $registro="INSERT INTO usuarios(email, pass, nombre ) 
         VALUES ('$correook', '$telenfok', '$nombreok')";
 
+        /**
+         * @param mysqli_query Metodo para guardar el registro
+         */
         $result= mysqli_query($conn, $registro);
 
        echo $result;
 
+       /**
+         * Condicional si se ejecuta y se guarda que pase por true se contruye el cuerpo del mensaje Gmail
+         *  */
        if ($registro){
             echo "<script>console.log(\"POR ACA PASO\")</script>";
             $asunto = 'Bienvenido a Desayunos Sorpresa';
@@ -96,16 +92,5 @@
             "X-Mailer: PHP/".phpversion(). "\r\n".
             "Content-Type: text/html; charset=ISO-8859-1\r\n";
             $mail = mail($correook, $asunto, $msg, $header);
-            if($mail){
-                echo '<h1>FUNCIONO</h1>';
-            }else{
-                echo '<h1>NO FUNCIONO</h1>';
-            }
-
-       }
-       
-
-    //    echo "Esta conectado" +$result;
-        
-    //   }
+        }
 ?>

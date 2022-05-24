@@ -1,7 +1,8 @@
 <?php 
-  include_once "php/header.php";
+    //Anidacion del header (MODULARIZACION DE CODIGO)
+    include_once "php/header.php";
 ?>
-  <!-- Inicio Seccion lateral y central -->
+    <!-- Inicio Seccion lateral y central -->
     <section class="hero">
         <div class="container">
             <div class="row">
@@ -103,5 +104,6 @@
     <!-- fin Seccion de categorias -->
 
 <?php 
-  include_once "php/footer.php";
+    //Anidacion del footer (MODULARIZACION DE CODIGO)
+    include_once "php/footer.php";
 ?>
