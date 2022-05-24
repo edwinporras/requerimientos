@@ -1,11 +1,5 @@
 <?php
-    $serv="localhost";
-    $user="admin";
-    $pass="rux69jyf3pta";
-    $namedb="proj_req";
-
-
-    $conn = mysqli_connect($serv, $user, $pass, $namedb);
+    include_once "config.php";
 
     $correook = $_POST["correo"];
     $telenfok = $_POST["password"];

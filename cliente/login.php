@@ -1,15 +1,8 @@
 <?php 
   include_once "php/header.php";
     if (isset($_REQUEST['registro'])){
-        $serv="localhost";
-        $user="admin";
-        $pass="rux69jyf3pta";
-        $namedb="proj_req";
-    
-        /**
-         * Conexion BD y registro del formulario
-         */
-        $conn = mysqli_connect($serv, $user, $pass, $namedb);
+        
+        include_once "php/config.php";
 
         /**Respuestade los campos del formulario */
         $correook = $_REQUEST["correo"]??'';
@@ -38,9 +31,6 @@
 ?>
         <div class="containerMainSuperior">
            <div class="panel panel-danger">
-            <!-- <div class="panel panel-heading">
-              REGISTRO DE USUARIO
-            </div> -->
             <div class="containerMainInferior">
               <form action="" id="formulario">
                   <!-- Campo correo -->
